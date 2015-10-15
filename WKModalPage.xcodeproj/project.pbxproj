@@ -13,6 +13,16 @@
 		DCAD68D01BCF72C900D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD68CF1BCF72C900D5A7FB /* Assets.xcassets */; };
 		DCAD68D31BCF72C900D5A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD68D11BCF72C900D5A7FB /* LaunchScreen.storyboard */; };
 		DCAD68DE1BCF72C900D5A7FB /* WKModalPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD68DD1BCF72C900D5A7FB /* WKModalPageTests.swift */; };
+		DCAD68EE1BCF72F400D5A7FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD68EC1BCF72F400D5A7FB /* Interface.storyboard */; };
+		DCAD68F01BCF72F400D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD68EF1BCF72F400D5A7FB /* Assets.xcassets */; };
+		DCAD68F71BCF72F500D5A7FB /* WKModalPageWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCAD68F61BCF72F500D5A7FB /* WKModalPageWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCAD68FE1BCF72F500D5A7FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD68FD1BCF72F500D5A7FB /* InterfaceController.swift */; };
+		DCAD69001BCF72F500D5A7FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD68FF1BCF72F500D5A7FB /* ExtensionDelegate.swift */; };
+		DCAD69021BCF72F500D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69011BCF72F500D5A7FB /* NotificationController.swift */; };
+		DCAD69041BCF72F500D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD69031BCF72F500D5A7FB /* Assets.xcassets */; };
+		DCAD69081BCF72F500D5A7FB /* WKModalPageWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD68EA1BCF72F400D5A7FB /* WKModalPageWatch.app */; };
+		DCAD69121BCF73D100D5A7FB /* pageOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69111BCF73D100D5A7FB /* pageOneController.swift */; settings = {ASSET_TAGS = (); }; };
+		DCAD69141BCF740700D5A7FB /* modalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD69131BCF740700D5A7FB /* modalController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +33,46 @@
 			remoteGlobalIDString = DCAD68C41BCF72C900D5A7FB;
 			remoteInfo = WKModalPage;
 		};
+		DCAD68F81BCF72F500D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD68BD1BCF72C900D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD68F51BCF72F500D5A7FB;
+			remoteInfo = "WKModalPageWatch Extension";
+		};
+		DCAD69061BCF72F500D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD68BD1BCF72C900D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD68E91BCF72F400D5A7FB;
+			remoteInfo = WKModalPageWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAD690C1BCF72F500D5A7FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCAD68F71BCF72F500D5A7FB /* WKModalPageWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD69101BCF72F500D5A7FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCAD69081BCF72F500D5A7FB /* WKModalPageWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCAD68C51BCF72C900D5A7FB /* WKModalPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKModalPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +85,19 @@
 		DCAD68D91BCF72C900D5A7FB /* WKModalPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKModalPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD68DD1BCF72C900D5A7FB /* WKModalPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKModalPageTests.swift; sourceTree = "<group>"; };
 		DCAD68DF1BCF72C900D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD68EA1BCF72F400D5A7FB /* WKModalPageWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKModalPageWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD68ED1BCF72F400D5A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCAD68EF1BCF72F400D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD68F11BCF72F400D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD68F61BCF72F500D5A7FB /* WKModalPageWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKModalPageWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD68FC1BCF72F500D5A7FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCAD68FD1BCF72F500D5A7FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCAD68FF1BCF72F500D5A7FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCAD69011BCF72F500D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCAD69031BCF72F500D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD69051BCF72F500D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD69111BCF73D100D5A7FB /* pageOneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageOneController.swift; sourceTree = "<group>"; };
+		DCAD69131BCF740700D5A7FB /* modalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD68F31BCF72F500D5A7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +130,8 @@
 			children = (
 				DCAD68C71BCF72C900D5A7FB /* WKModalPage */,
 				DCAD68DC1BCF72C900D5A7FB /* WKModalPageTests */,
+				DCAD68EB1BCF72F400D5A7FB /* WKModalPageWatch */,
+				DCAD68FA1BCF72F500D5A7FB /* WKModalPageWatch Extension */,
 				DCAD68C61BCF72C900D5A7FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +141,8 @@
 			children = (
 				DCAD68C51BCF72C900D5A7FB /* WKModalPage.app */,
 				DCAD68D91BCF72C900D5A7FB /* WKModalPageTests.xctest */,
+				DCAD68EA1BCF72F400D5A7FB /* WKModalPageWatch.app */,
+				DCAD68F61BCF72F500D5A7FB /* WKModalPageWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +169,39 @@
 			path = WKModalPageTests;
 			sourceTree = "<group>";
 		};
+		DCAD68EB1BCF72F400D5A7FB /* WKModalPageWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD68EC1BCF72F400D5A7FB /* Interface.storyboard */,
+				DCAD68EF1BCF72F400D5A7FB /* Assets.xcassets */,
+				DCAD68F11BCF72F400D5A7FB /* Info.plist */,
+			);
+			path = WKModalPageWatch;
+			sourceTree = "<group>";
+		};
+		DCAD68FA1BCF72F500D5A7FB /* WKModalPageWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD69111BCF73D100D5A7FB /* pageOneController.swift */,
+				DCAD69131BCF740700D5A7FB /* modalController.swift */,
+				DCAD68FD1BCF72F500D5A7FB /* InterfaceController.swift */,
+				DCAD68FF1BCF72F500D5A7FB /* ExtensionDelegate.swift */,
+				DCAD69011BCF72F500D5A7FB /* NotificationController.swift */,
+				DCAD69031BCF72F500D5A7FB /* Assets.xcassets */,
+				DCAD69051BCF72F500D5A7FB /* Info.plist */,
+				DCAD68FB1BCF72F500D5A7FB /* Supporting Files */,
+			);
+			path = "WKModalPageWatch Extension";
+			sourceTree = "<group>";
+		};
+		DCAD68FB1BCF72F500D5A7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD68FC1BCF72F500D5A7FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +212,12 @@
 				DCAD68C11BCF72C900D5A7FB /* Sources */,
 				DCAD68C21BCF72C900D5A7FB /* Frameworks */,
 				DCAD68C31BCF72C900D5A7FB /* Resources */,
+				DCAD69101BCF72F500D5A7FB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCAD69071BCF72F500D5A7FB /* PBXTargetDependency */,
 			);
 			name = WKModalPage;
 			productName = WKModalPage;
@@ -134,6 +242,40 @@
 			productReference = DCAD68D91BCF72C900D5A7FB /* WKModalPageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCAD68E91BCF72F400D5A7FB /* WKModalPageWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD690D1BCF72F500D5A7FB /* Build configuration list for PBXNativeTarget "WKModalPageWatch" */;
+			buildPhases = (
+				DCAD68E81BCF72F400D5A7FB /* Resources */,
+				DCAD690C1BCF72F500D5A7FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAD68F91BCF72F500D5A7FB /* PBXTargetDependency */,
+			);
+			name = WKModalPageWatch;
+			productName = WKModalPageWatch;
+			productReference = DCAD68EA1BCF72F400D5A7FB /* WKModalPageWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCAD68F51BCF72F500D5A7FB /* WKModalPageWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD69091BCF72F500D5A7FB /* Build configuration list for PBXNativeTarget "WKModalPageWatch Extension" */;
+			buildPhases = (
+				DCAD68F21BCF72F500D5A7FB /* Sources */,
+				DCAD68F31BCF72F500D5A7FB /* Frameworks */,
+				DCAD68F41BCF72F500D5A7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKModalPageWatch Extension";
+			productName = "WKModalPageWatch Extension";
+			productReference = DCAD68F61BCF72F500D5A7FB /* WKModalPageWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +287,19 @@
 				TargetAttributes = {
 					DCAD68C41BCF72C900D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DCAD68D81BCF72C900D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = DCAD68C41BCF72C900D5A7FB;
+					};
+					DCAD68E91BCF72F400D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DCAD68F51BCF72F500D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 				};
 			};
@@ -167,6 +318,8 @@
 			targets = (
 				DCAD68C41BCF72C900D5A7FB /* WKModalPage */,
 				DCAD68D81BCF72C900D5A7FB /* WKModalPageTests */,
+				DCAD68E91BCF72F400D5A7FB /* WKModalPageWatch */,
+				DCAD68F51BCF72F500D5A7FB /* WKModalPageWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +339,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD68E81BCF72F400D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD68F01BCF72F400D5A7FB /* Assets.xcassets in Resources */,
+				DCAD68EE1BCF72F400D5A7FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD68F41BCF72F500D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69041BCF72F500D5A7FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +379,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD68F21BCF72F500D5A7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD69021BCF72F500D5A7FB /* NotificationController.swift in Sources */,
+				DCAD69121BCF73D100D5A7FB /* pageOneController.swift in Sources */,
+				DCAD69001BCF72F500D5A7FB /* ExtensionDelegate.swift in Sources */,
+				DCAD68FE1BCF72F500D5A7FB /* InterfaceController.swift in Sources */,
+				DCAD69141BCF740700D5A7FB /* modalController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +398,16 @@
 			isa = PBXTargetDependency;
 			target = DCAD68C41BCF72C900D5A7FB /* WKModalPage */;
 			targetProxy = DCAD68DA1BCF72C900D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD68F91BCF72F500D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD68F51BCF72F500D5A7FB /* WKModalPageWatch Extension */;
+			targetProxy = DCAD68F81BCF72F500D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD69071BCF72F500D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD68E91BCF72F400D5A7FB /* WKModalPageWatch */;
+			targetProxy = DCAD69061BCF72F500D5A7FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -234,6 +426,14 @@
 				DCAD68D21BCF72C900D5A7FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD68EC1BCF72F400D5A7FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD68ED1BCF72F400D5A7FB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKModalPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage;
@@ -335,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKModalPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage;
@@ -366,6 +568,70 @@
 			};
 			name = Release;
 		};
+		DCAD690A1BCF72F500D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKModalPageWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD690B1BCF72F500D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WKModalPageWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DCAD690E1BCF72F500D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKModalPageWatch_Extension;
+				INFOPLIST_FILE = WKModalPageWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD690F1BCF72F500D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKModalPageWatch_Extension;
+				INFOPLIST_FILE = WKModalPageWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKModalPage.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +657,22 @@
 			buildConfigurations = (
 				DCAD68E61BCF72C900D5A7FB /* Debug */,
 				DCAD68E71BCF72C900D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD69091BCF72F500D5A7FB /* Build configuration list for PBXNativeTarget "WKModalPageWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD690A1BCF72F500D5A7FB /* Debug */,
+				DCAD690B1BCF72F500D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD690D1BCF72F500D5A7FB /* Build configuration list for PBXNativeTarget "WKModalPageWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD690E1BCF72F500D5A7FB /* Debug */,
+				DCAD690F1BCF72F500D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
