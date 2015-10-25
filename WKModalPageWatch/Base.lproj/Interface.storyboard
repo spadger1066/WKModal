@@ -30,7 +30,7 @@
             <objects>
                 <controller identifier="modalController" hidesWhenLoading="NO" id="vxz-aD-J5I" customClass="modalController" customModule="WKModalPageWatch_Extension">
                     <items>
-                        <label alignment="left" text="Label" id="qu3-dA-vDs"/>
+                        <label height="46.5" alignment="left" text="Label" id="qu3-dA-vDs"/>
                     </items>
                     <connections>
                         <outlet property="lblMessage" destination="qu3-dA-vDs" id="l3o-MI-M3C"/>
